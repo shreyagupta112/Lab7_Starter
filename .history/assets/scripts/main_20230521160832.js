@@ -52,7 +52,7 @@ function initializeServiceWorker() {
      // B2. TODO - Listen for the 'load' event on the window object.
      window.addEventListener('load', async () => {
        try {
-         const registration = await navigator.serviceWorker.register('./sw.js', { scope: '/', });
+         const registration = await navigator.serviceWorker.register('./sw.js', { scope: './', });
          console.log('ServiceWorker registration successful with scope: ', registration.scope);
        } catch (err) {
          console.error('ServiceWorker registration failed: ', err);
